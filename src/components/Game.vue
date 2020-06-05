@@ -1,7 +1,7 @@
 <template>
   <div class="game">
     <div class="game-board">
-      <Board :squares="history[stepNumber].squares" :put="handleClick"></Board>
+      <Board :squares="history[stepNumber].squares" @put="handleClick"></Board>
     </div>
     <div class="game-info">
       <div>{{ status }}</div>

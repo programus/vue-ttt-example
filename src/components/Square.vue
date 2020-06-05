@@ -1,7 +1,5 @@
 <template>
-<button class="square" @click="clicked()">
-  {{ value }}
-</button>
+  <button class="square" @click="clicked()">{{ value }}</button>
 </template>
 
 <script>
@@ -12,8 +10,7 @@ export default {
   },
   methods: {
     clicked() {
-      this.$emit('put', null);
-      console.log('clicked');
+      this.$emit("put", null);
     }
   }
 };
